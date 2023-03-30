@@ -1,1 +1,156 @@
+
 My First change with second commit
+
+
+Rukadar Laptop@Rukadar MINGW64 ~
+$ cd
+
+Rukadar Laptop@Rukadar MINGW64 ~
+$ cs /C
+bash: cs: command not found
+
+Rukadar Laptop@Rukadar MINGW64 ~
+$ cd /c
+
+Rukadar Laptop@Rukadar MINGW64 /c
+$ ls
+'$Recycle.Bin'/            'Program Files'/               Windows/
+'$WinREAgent'/             'Program Files (x86)'/         hiberfil.sys
+'Documents and Settings'@   ProgramData/                  pagefile.sys
+ DumpStack.log.tmp          Recovery/                     swapfile.sys
+ Git/                      'System Volume Information'/
+ PerfLogs/                  Users/
+
+Rukadar Laptop@Rukadar MINGW64 /c
+$ cd Git
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ ls
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ git config --global user.name "ruchikapoor098"
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ git config --global user.email ruchikapoor098@gmail.com
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ git clone https://github.com/ruchikapoor098/New-Project.git
+Cloning into 'New-Project'...
+warning: You appear to have cloned an empty repository.
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ ls
+New-Project/
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ cd New project
+bash: cd: too many arguments
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git
+$ cd New-Project
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ ls
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ ls
+Test.txt
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git add Test.txt
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git Status
+git: 'Status' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Test.txt
+
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git commit -m "First Commit" test.txt
+error: pathspec 'test.txt' did not match any file(s) known to git
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$  git commit - "first commit" Test.txt
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'first commit' did not match any file(s) known to git
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git commit -m "first commit" Test.txt
+[main (root-commit) 86bb6c4] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test.txt
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ruchikapoor098/New-Project.git'
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ruchikapoor098/New-Project.git'
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$  ^C
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git commit -m "initial commit"
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 207 bytes | 207.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ruchikapoor098/New-Project.git
+ * [new branch]      main -> main
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git Status
+git: 'Status' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git commit -m "second commit" Test.txt
+[main 5701bc6] second commit
+ 1 file changed, 1 insertion(+)
+
+Rukadar Laptop@Rukadar MINGW64 /c/Git/New-Project (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ruchikapoor098/New-Project.git
+   86bb6c4..5701bc6  main -> main
